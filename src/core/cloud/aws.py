@@ -42,4 +42,3 @@ class AWSHelper:
             )
         except Exception as e:
             print(f"Erro na restauração: {e}")
-
