@@ -1,6 +1,7 @@
 from services.cloud_sql import CloudSQLService
 
-class GCP:
+
+class GCPHelper:
     def __init__(self, config: dict):
         self.config = config
     
