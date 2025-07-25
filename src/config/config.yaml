@@ -1,0 +1,35 @@
+# GCP
+gcp:
+  project_id: "ai-projects-436718"
+  service_account_key: "..."
+  cloud_sql:
+    instance_name: "urban-dev"
+    database_name: "ai_urban"
+    user: "admin"
+    password: "2146"
+
+# AWS
+aws:
+  access_key_id: "..."
+  secret_access_key: "..."
+  region: "us-east-2"
+  services:
+    s3:
+      bucket_name: "my-aws-bucket"
+      prefix: "migrations/"
+    rds:
+      instance_id: ""
+      database:
+      user:
+      password:
+
+# Migrations Config
+migrations:
+  tmp_dir: "/tmp/migrations"
+  keep_backups: 3
+  validation:
+    enable_checksum: true
+    timeout_seconds: 3600
+  cloud:
+    aws:
+      sts_role_arn: ""
