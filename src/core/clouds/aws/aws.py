@@ -3,7 +3,7 @@ from services.s3 import S3Client
 from services.sts import AWSCredentialsManager
 
 
-class AWS:
+class AWSHelper:
     def __init__(self, config: dict):
         self.config = config
         
