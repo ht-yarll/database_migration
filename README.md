@@ -47,4 +47,9 @@ sequenceDiagram
     SCRIPT->>S3: Opcional: marca objeto como migrado
 ```
 
+# Como usar? 🦧
+
+1. Baixar **AWS CLI**, **GCloud CLI** ou o da nuvem de sua preferência. Os mesmos já criam varíaveis de ambientes ocultas que podemos passar no _config.yaml_ - Recomendado;
+    1.5. Pode-se passar as variáveis por um .env, mas fica mais complexo e pode dar problemas de importação e leitura do _environment_, para isso é necessária uma configuração mais precisa, até para impedir que _dados sensíveis_ fiquem expostos.
+2. 
 

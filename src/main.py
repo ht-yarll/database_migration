@@ -1,8 +1,8 @@
-from pipelines.migration import MigrationPipeline
+from src.config.load_config import load_config
+from src.core.clouds.aws.aws import AWSHelper
+from src.core.clouds.gcp.gcp import GCPHelper
+
 
 def main():
-    pipeline = MigrationPipeline()
-    pipeline.migrate()
-
-if __name__ == "__main__":
-    main()
+    config = load_config()
+    ...
